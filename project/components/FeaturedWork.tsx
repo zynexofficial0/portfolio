@@ -112,44 +112,23 @@ export default function FeaturedWork() {
                   airdrophunt.net
                 </div>
               </div>
-              <div className="relative aspect-[16/10] bg-gradient-to-br from-neon-blue/10 to-neon-emerald/10 overflow-hidden">
+              <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-neon-blue/10 to-neon-emerald/10">
                 <div className="absolute inset-0 shimmer opacity-30" />
-                <div className="absolute inset-0 p-6 flex flex-col gap-3">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-neon-cyan to-neon-blue flex items-center justify-center text-black font-bold text-xs">
-                        AH
-                      </div>
-                      <span className="text-sm font-semibold">AirdropHunt</span>
-                    </div>
-                    <div className="glass px-2 py-1 rounded-full text-[10px] text-neon-emerald">
-                      Live
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-3 gap-2 mt-2">
-                    {[...Array(6)].map((_, i) => (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: i * 0.1 }}
-                        className="glass rounded-lg p-3"
-                      >
-                        <div className="w-full h-2 bg-white/10 rounded-full mb-2" />
-                        <div className="w-2/3 h-2 bg-white/5 rounded-full" />
-                      </motion.div>
-                    ))}
-                  </div>
-                  <div className="mt-auto glass rounded-xl p-3 flex items-center justify-between">
-                    <span className="text-xs text-muted-foreground">Latest Airdrops</span>
-                    <div className="flex gap-1">
-                      <div className="w-2 h-2 rounded-full bg-neon-cyan animate-pulse" />
-                      <div className="w-2 h-2 rounded-full bg-neon-blue animate-pulse" style={{ animationDelay: '0.2s' }} />
-                      <div className="w-2 h-2 rounded-full bg-neon-emerald animate-pulse" style={{ animationDelay: '0.4s' }} />
-                    </div>
-                  </div>
-                </div>
+                <img
+                  src="https://image.thum.io/get/width/1600/crop/1600/https://www.airdrophunt.net/"
+                  alt="AirdropHunt website preview"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+                <a
+                  href="https://www.airdrophunt.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute bottom-4 right-4 glass rounded-full px-3 py-1.5 text-xs font-medium text-foreground/90 hover:border-neon-cyan/30 transition-colors"
+                >
+                  Open Preview
+                </a>
               </div>
             </div>
 
