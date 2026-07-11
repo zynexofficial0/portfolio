@@ -49,13 +49,6 @@ const additionalProjects = [
   },
 ];
 
-const featuredStats = [
-  { label: 'Monthly Users', value: '5K+', icon: TrendingUp },
-  { label: 'Uptime', value: '99.9%', icon: Gauge },
-  { label: 'Page Speed', value: '95+', icon: Zap },
-  { label: 'Tech Stack', value: '8', icon: Layers },
-];
-
 const featuredFeatures = [
   'Real-time airdrop tracking and alerts',
   'User authentication and personalized watchlists',
@@ -177,25 +170,7 @@ export default function FeaturedWork() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {featuredStats.map((stat, i) => {
-                const Icon = stat.icon;
-                return (
-                  <motion.div
-                    key={stat.label}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
-                    className="glass rounded-xl p-3 text-center"
-                  >
-                    <Icon className="w-4 h-4 mx-auto mb-1 text-neon-cyan/70" />
-                    <div className="text-lg font-bold">{stat.value}</div>
-                    <div className="text-[10px] text-muted-foreground">{stat.label}</div>
-                  </motion.div>
-                );
-              })}
-            </div>
+            {/* Featured stats removed */}
 
             <div>
               <h4 className="text-sm font-semibold mb-3 text-muted-foreground">Key Features</h4>
