@@ -18,7 +18,7 @@ export default function ProfileBadge() {
         </div>
         <div className="absolute inset-[2px] rounded-full overflow-hidden">
           <Image
-            src="/images/WhatsApp_Image_2026-07-10_at_14.30.27.jpeg"
+            src="/images/WhatsApp_Image_2026-07-10_at_12.42.52.jpeg"
             alt="Muhammad Areesh"
             fill
             sizes="112px"
