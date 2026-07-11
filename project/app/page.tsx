@@ -26,7 +26,7 @@ export default function Home() {
       <div className="relative min-h-screen noise-overlay">
         <Navbar />
 
-        <main>
+        <main className="pt-24 sm:pt-28">
           <Hero />
           <SectionDivider />
           <About />
